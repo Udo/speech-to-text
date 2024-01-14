@@ -1,0 +1,4 @@
+webrtcvad
+pyAudioAnalysis
+openai-whisper
+pyaudio 

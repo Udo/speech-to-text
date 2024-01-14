@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SCRIPT_PATH="$(realpath $0)"
+SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
+
+sudo apt install ffmpeg portaudio-dev
+python3 -m venv env
+env/bin/pip install -U openai-whisper pyaudio webrtcvad pyAudioAnalysis
+
+
+

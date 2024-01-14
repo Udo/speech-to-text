@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rm temp_audio* 2> /dev/null
+
+SHM_DIR="/dev/shm"
+if [ ! -d "$SHM_DIR" ]; then
+    SHM_DIR="/tmp"
+fi
+
+env/bin/python realtime.py "$SHM_DIR"
